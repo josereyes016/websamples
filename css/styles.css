@@ -1,0 +1,53 @@
+div {
+    height:50px;
+    width:30px;
+    display: inline-block;
+    border-radius:5px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Arial, Sans-Serif;
+    margin-right:5px;
+    line-height: 50px;
+}
+
+#red {
+    background-color:#FF0000;
+}
+
+#blue {
+    background-color:#0000FF;
+}
+
+#yellow {
+    background-color:#E2BE22;
+}
+
+#green {
+    background-color:#008800;
+}
+
+#brown {
+    background-color:#993333;
+}
+
+#orange {
+    background-color:#FFA500;
+}
+
+#violet {
+    background-color:#EE82EE;
+}
+
+#gray {
+    background-color:#808080;
+}
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
+/*#reset{
+    background-color: #FF00FF;
+
+}*/

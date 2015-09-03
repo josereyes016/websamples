@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="typed">
+
+    </div>
+    <script>
+    window.onload = function(){
+    var set = "This is CS50xMiami";
+    var div = document.getElementById("typed");
+    var i = 0;
+      var stopw = setInterval(function(){
+
+            div.innerHTML += set[i];
+            //console.log(set[i]);
+            i++;
+            if(i == set.length)
+            {
+
+              clearInterval(stopw);
+              //console.log(i);
+              setsplit = set.split("");
+              var stope = setInterval(function(){
+
+                setsplit[i - 1] = ' ';
+                div.innerHTML = setsplit.join("");
+;
+                    i--;
+                    if(i == 0)
+                    {
+                      clearInterval(stope);
+                    }
+
+              },100);
+
+            }
+
+      },100);
+
+
+      // var stope = setInterval(function(){
+      //
+      //   setsplit = set.split("");
+      //   setsplit[i - 1] = ' ';
+      //   setsplit = setsplit.join("");
+      //   div.innerHTML = setsplit;
+      //       i--;
+      //       if(i == 0)
+      //       {
+      //         clearInterval(stope);
+      //       }
+      //
+      // },100);
+    }
+    </script>
+  </body>
+</html>
